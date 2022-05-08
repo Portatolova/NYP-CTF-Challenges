@@ -1,0 +1,1 @@
+docker build -t hidden-in-plain-sight .

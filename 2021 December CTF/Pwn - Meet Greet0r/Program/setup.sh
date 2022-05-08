@@ -1,0 +1,1 @@
+docker build -t meet-greet0r .

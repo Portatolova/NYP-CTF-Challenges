@@ -1,0 +1,1 @@
+docker build -t ew02-framed-copy .

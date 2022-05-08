@@ -1,0 +1,21 @@
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page > div {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 40vh;
+    width: 50vw;
+}
+
+.page > div:nth-child(1) {
+    background-position: right;
+}
+
+.page > div:nth-child(2) {
+    background-position: left;
+}

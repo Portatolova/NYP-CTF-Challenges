@@ -1,0 +1,36 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page > div {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 40vh;
+    width: 50vw;
+}
+
+.page > div:nth-child(1) {
+    background-position: right;
+}
+
+.page > div:nth-child(2) {
+    background-position: left;
+}
+
+.page > button {
+    background: #151515;
+    color: white;
+    padding: 10px 40px;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.page > button:hover {
+    filter: drop-shadow(0 0 5px black);
+}

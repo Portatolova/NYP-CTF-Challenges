@@ -1,0 +1,93 @@
+#!/usr/bin/env python3
+
+#
+#   Multi-Threaded netcat server that opens tty shell
+#
+#   Multi-Threading stolen from John Hammond (https://www.youtube.com/watch?v=kjDrGI8W-vg)
+#   Pseudo-TTy shell handler by me (https://github.com/Portatolova/netcat-server/blob/main/main)
+#
+#   Created by Carl Voller
+#
+
+from socketserver import BaseRequestHandler, ThreadingMixIn, TCPServer, DatagramRequestHandler
+from os           import getcwd, environ, read, write, killpg, getpgid
+from sys          import exit
+from pty          import openpty
+from select       import select
+from subprocess   import Popen, PIPE
+from threading    import Thread
+from time         import sleep
+from signal       import SIGTERM
+
+class Service(BaseRequestHandler):
+    def handle(self):
+        (mi, si) = openpty()    # stdin
+        (mo, so) = openpty()    # stdout
+        (me, se) = openpty()    # stderr
+
+        self.mfds = (mo, me, mi)
+        
+        # Open child process with the pty terminal as the handler
+        self.proc = Popen("./Greet0r", stdout=so, stderr=se, stdin=si, cwd=getcwd())
+
+        self.read()
+
+        while True:
+
+            msg = self.request.recv(1024)
+            
+            # Exits program when client disconnects
+            if msg == b'' or msg == b'\n':
+                write(mi, b"exit")
+                self.request.close()
+                killpg(getpgid(self.proc.pid), SIGTERM)
+                return
+
+            write(mi, msg);
+            self.read()
+
+            # Checks if program has been terminated (aka return code is not None)
+            if self.proc.poll() is not None:
+                write(mi, b"exit")
+                self.request.close()
+                try:
+                    killpg(getpgid(self.proc.pid), SIGTERM)
+                except ProcessLookupError:
+                    pass
+                return
+
+    def read(self):
+        (mo, me, mi) = self.mfds
+        while True:
+
+            # select file descriptor currently being written to
+            ready, _, _ = select([mo, me], [], [], 1)
+
+            if ready:
+                for fd in ready:
+                    data = read(fd, 512)
+                    if not data:
+                        break
+                    self.request.send(data);
+            else:
+                break
+
+# This class required for threaded service
+class ThreadedService(ThreadingMixIn, TCPServer, DatagramRequestHandler):
+    pass
+
+def main():
+    port = int(environ["PORT"])
+    host = '0.0.0.0'
+
+    server = ThreadedService((host, port), Service)    
+    server.allow_reuse_address = True
+    server_thread = Thread(target = server.serve_forever)
+
+    server_thread.daemon = True
+    server_thread.start()
+
+    while True: sleep(1)
+
+if __name__ == "__main__":
+    main()

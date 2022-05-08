@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+'''
+Simple netcat server
+Created by Carl Voller
+'''
+
+from socketserver import BaseRequestHandler, TCPServer
+from os           import environ
+
+class handler(BaseRequestHandler):
+    def handle(self):
+        self.request.send(bytes("¯\_(ツ)_/¯\n", "utf-8"))
+        self.request.send(b"\x1B[1;31mNYP{ans1_c0ntr0l_s3qu3nc3s_damn_c00l}\x1B[1K\n\x1B[1F");
+
+with TCPServer(('', int(environ["PORT"])), handler) as server:
+    server.serve_forever()
+

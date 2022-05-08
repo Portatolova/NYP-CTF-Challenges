@@ -1,0 +1,13 @@
+.page3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page3 > div {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 40vh;
+    width: calc(40vh/9*16);
+}
