@@ -1,0 +1,2 @@
+It seems someone has hacked their way into my computer to try and steal the exam results... thats okay, I've created a super advanced encryption machine they'll never be able to break!
+Note to self: Its stored in /encryptor

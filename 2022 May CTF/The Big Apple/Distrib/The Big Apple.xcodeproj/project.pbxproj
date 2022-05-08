@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		328CF7F9281D2FF6005D60D4 /* The_Big_AppleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328CF7F8281D2FF6005D60D4 /* The_Big_AppleApp.swift */; };
+		328CF7FB281D2FF6005D60D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328CF7FA281D2FF6005D60D4 /* ContentView.swift */; };
+		328CF7FD281D2FF8005D60D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328CF7FC281D2FF8005D60D4 /* Assets.xcassets */; };
+		328CF800281D2FF8005D60D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328CF7FF281D2FF8005D60D4 /* Preview Assets.xcassets */; };
+		328CF804281D2FF8005D60D4 /* The Big Apple WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 328CF803281D2FF8005D60D4 /* The Big Apple WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		328CF809281D2FF9005D60D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328CF808281D2FF9005D60D4 /* Assets.xcassets */; };
+		328CF80F281D2FF9005D60D4 /* The Big Apple WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 328CF80E281D2FF9005D60D4 /* The Big Apple WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		328CF814281D2FF9005D60D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328CF813281D2FF9005D60D4 /* ContentView.swift */; };
+		328CF816281D2FF9005D60D4 /* The_Big_AppleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328CF815281D2FF9005D60D4 /* The_Big_AppleApp.swift */; };
+		328CF818281D2FF9005D60D4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328CF817281D2FF9005D60D4 /* ComplicationController.swift */; };
+		328CF81A281D2FF9005D60D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328CF819281D2FF9005D60D4 /* Assets.xcassets */; };
+		328CF81D281D2FF9005D60D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328CF81C281D2FF9005D60D4 /* Preview Assets.xcassets */; };
+		328CF82D281D3193005D60D4 /* ViewModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328CF82C281D3193005D60D4 /* ViewModelWatch.swift */; };
+		328CF82F281D31E8005D60D4 /* ViewModelPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328CF82E281D31E8005D60D4 /* ViewModelPhone.swift */; };
+		328CF831281D33CB005D60D4 /* OutputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328CF830281D33CB005D60D4 /* OutputField.swift */; };
+		328CF834281D3592005D60D4 /* enc.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CF833281D3592005D60D4 /* enc.m */; };
+		328CF837281D3C0D005D60D4 /* magic.s in Sources */ = {isa = PBXBuildFile; fileRef = 328CF836281D3C0D005D60D4 /* magic.s */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		328CF805281D2FF8005D60D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 328CF7ED281D2FF6005D60D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 328CF802281D2FF8005D60D4;
+			remoteInfo = "The Big Apple WatchKit App";
+		};
+		328CF810281D2FF9005D60D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 328CF7ED281D2FF6005D60D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 328CF80D281D2FF9005D60D4;
+			remoteInfo = "The Big Apple WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		328CF824281D2FF9005D60D4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				328CF80F281D2FF9005D60D4 /* The Big Apple WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328CF828281D2FF9005D60D4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				328CF804281D2FF8005D60D4 /* The Big Apple WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		328CF7F5281D2FF6005D60D4 /* The Big Apple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Big Apple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		328CF7F8281D2FF6005D60D4 /* The_Big_AppleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Big_AppleApp.swift; sourceTree = "<group>"; };
+		328CF7FA281D2FF6005D60D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		328CF7FC281D2FF8005D60D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		328CF7FF281D2FF8005D60D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		328CF803281D2FF8005D60D4 /* The Big Apple WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Big Apple WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		328CF808281D2FF9005D60D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		328CF80E281D2FF9005D60D4 /* The Big Apple WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "The Big Apple WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		328CF813281D2FF9005D60D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		328CF815281D2FF9005D60D4 /* The_Big_AppleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Big_AppleApp.swift; sourceTree = "<group>"; };
+		328CF817281D2FF9005D60D4 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		328CF819281D2FF9005D60D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		328CF81C281D2FF9005D60D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		328CF81E281D2FF9005D60D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		328CF82C281D3193005D60D4 /* ViewModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelWatch.swift; sourceTree = "<group>"; };
+		328CF82E281D31E8005D60D4 /* ViewModelPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelPhone.swift; sourceTree = "<group>"; };
+		328CF830281D33CB005D60D4 /* OutputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputField.swift; sourceTree = "<group>"; };
+		328CF832281D3592005D60D4 /* The Big Apple-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The Big Apple-Bridging-Header.h"; sourceTree = "<group>"; };
+		328CF833281D3592005D60D4 /* enc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = enc.m; sourceTree = "<group>"; };
+		328CF835281D393A005D60D4 /* enc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = enc.h; sourceTree = "<group>"; };
+		328CF836281D3C0D005D60D4 /* magic.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = magic.s; sourceTree = "<group>"; };
+		328CF838281D3D2B005D60D4 /* magic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = magic.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		328CF7F2281D2FF6005D60D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328CF80B281D2FF9005D60D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		328CF7EC281D2FF6005D60D4 = {
+			isa = PBXGroup;
+			children = (
+				328CF7F7281D2FF6005D60D4 /* The Big Apple */,
+				328CF807281D2FF8005D60D4 /* The Big Apple WatchKit App */,
+				328CF812281D2FF9005D60D4 /* The Big Apple WatchKit Extension */,
+				328CF7F6281D2FF6005D60D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		328CF7F6281D2FF6005D60D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				328CF7F5281D2FF6005D60D4 /* The Big Apple.app */,
+				328CF803281D2FF8005D60D4 /* The Big Apple WatchKit App.app */,
+				328CF80E281D2FF9005D60D4 /* The Big Apple WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		328CF7F7281D2FF6005D60D4 /* The Big Apple */ = {
+			isa = PBXGroup;
+			children = (
+				328CF7F8281D2FF6005D60D4 /* The_Big_AppleApp.swift */,
+				328CF7FA281D2FF6005D60D4 /* ContentView.swift */,
+				328CF7FC281D2FF8005D60D4 /* Assets.xcassets */,
+				328CF7FE281D2FF8005D60D4 /* Preview Content */,
+				328CF82E281D31E8005D60D4 /* ViewModelPhone.swift */,
+				328CF830281D33CB005D60D4 /* OutputField.swift */,
+				328CF833281D3592005D60D4 /* enc.m */,
+				328CF832281D3592005D60D4 /* The Big Apple-Bridging-Header.h */,
+				328CF835281D393A005D60D4 /* enc.h */,
+				328CF836281D3C0D005D60D4 /* magic.s */,
+				328CF838281D3D2B005D60D4 /* magic.h */,
+			);
+			path = "The Big Apple";
+			sourceTree = "<group>";
+		};
+		328CF7FE281D2FF8005D60D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				328CF7FF281D2FF8005D60D4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		328CF807281D2FF8005D60D4 /* The Big Apple WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				328CF808281D2FF9005D60D4 /* Assets.xcassets */,
+			);
+			path = "The Big Apple WatchKit App";
+			sourceTree = "<group>";
+		};
+		328CF812281D2FF9005D60D4 /* The Big Apple WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				328CF813281D2FF9005D60D4 /* ContentView.swift */,
+				328CF82C281D3193005D60D4 /* ViewModelWatch.swift */,
+				328CF815281D2FF9005D60D4 /* The_Big_AppleApp.swift */,
+				328CF817281D2FF9005D60D4 /* ComplicationController.swift */,
+				328CF819281D2FF9005D60D4 /* Assets.xcassets */,
+				328CF81E281D2FF9005D60D4 /* Info.plist */,
+				328CF81B281D2FF9005D60D4 /* Preview Content */,
+			);
+			path = "The Big Apple WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		328CF81B281D2FF9005D60D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				328CF81C281D2FF9005D60D4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		328CF7F4281D2FF6005D60D4 /* The Big Apple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 328CF829281D2FF9005D60D4 /* Build configuration list for PBXNativeTarget "The Big Apple" */;
+			buildPhases = (
+				328CF7F1281D2FF6005D60D4 /* Sources */,
+				328CF7F2281D2FF6005D60D4 /* Frameworks */,
+				328CF7F3281D2FF6005D60D4 /* Resources */,
+				328CF828281D2FF9005D60D4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				328CF806281D2FF8005D60D4 /* PBXTargetDependency */,
+			);
+			name = "The Big Apple";
+			productName = "The Big Apple";
+			productReference = 328CF7F5281D2FF6005D60D4 /* The Big Apple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		328CF802281D2FF8005D60D4 /* The Big Apple WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 328CF825281D2FF9005D60D4 /* Build configuration list for PBXNativeTarget "The Big Apple WatchKit App" */;
+			buildPhases = (
+				328CF801281D2FF8005D60D4 /* Resources */,
+				328CF824281D2FF9005D60D4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				328CF811281D2FF9005D60D4 /* PBXTargetDependency */,
+			);
+			name = "The Big Apple WatchKit App";
+			productName = "The Big Apple WatchKit App";
+			productReference = 328CF803281D2FF8005D60D4 /* The Big Apple WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		328CF80D281D2FF9005D60D4 /* The Big Apple WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 328CF821281D2FF9005D60D4 /* Build configuration list for PBXNativeTarget "The Big Apple WatchKit Extension" */;
+			buildPhases = (
+				328CF80A281D2FF9005D60D4 /* Sources */,
+				328CF80B281D2FF9005D60D4 /* Frameworks */,
+				328CF80C281D2FF9005D60D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Big Apple WatchKit Extension";
+			productName = "The Big Apple WatchKit Extension";
+			productReference = 328CF80E281D2FF9005D60D4 /* The Big Apple WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		328CF7ED281D2FF6005D60D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					328CF7F4281D2FF6005D60D4 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+					328CF802281D2FF8005D60D4 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					328CF80D281D2FF9005D60D4 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 328CF7F0281D2FF6005D60D4 /* Build configuration list for PBXProject "The Big Apple" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 328CF7EC281D2FF6005D60D4;
+			productRefGroup = 328CF7F6281D2FF6005D60D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				328CF7F4281D2FF6005D60D4 /* The Big Apple */,
+				328CF802281D2FF8005D60D4 /* The Big Apple WatchKit App */,
+				328CF80D281D2FF9005D60D4 /* The Big Apple WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		328CF7F3281D2FF6005D60D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328CF800281D2FF8005D60D4 /* Preview Assets.xcassets in Resources */,
+				328CF7FD281D2FF8005D60D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328CF801281D2FF8005D60D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328CF809281D2FF9005D60D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328CF80C281D2FF9005D60D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328CF81D281D2FF9005D60D4 /* Preview Assets.xcassets in Resources */,
+				328CF81A281D2FF9005D60D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		328CF7F1281D2FF6005D60D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328CF834281D3592005D60D4 /* enc.m in Sources */,
+				328CF837281D3C0D005D60D4 /* magic.s in Sources */,
+				328CF82F281D31E8005D60D4 /* ViewModelPhone.swift in Sources */,
+				328CF831281D33CB005D60D4 /* OutputField.swift in Sources */,
+				328CF7FB281D2FF6005D60D4 /* ContentView.swift in Sources */,
+				328CF7F9281D2FF6005D60D4 /* The_Big_AppleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328CF80A281D2FF9005D60D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328CF814281D2FF9005D60D4 /* ContentView.swift in Sources */,
+				328CF816281D2FF9005D60D4 /* The_Big_AppleApp.swift in Sources */,
+				328CF82D281D3193005D60D4 /* ViewModelWatch.swift in Sources */,
+				328CF818281D2FF9005D60D4 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		328CF806281D2FF8005D60D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 328CF802281D2FF8005D60D4 /* The Big Apple WatchKit App */;
+			targetProxy = 328CF805281D2FF8005D60D4 /* PBXContainerItemProxy */;
+		};
+		328CF811281D2FF9005D60D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 328CF80D281D2FF9005D60D4 /* The Big Apple WatchKit Extension */;
+			targetProxy = 328CF810281D2FF9005D60D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		328CF81F281D2FF9005D60D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		328CF820281D2FF9005D60D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		328CF822281D2FF9005D60D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"The Big Apple WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 85M7FD6YM2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The Big Apple WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "The Big Apple WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "is.carlvoller.The-Big-Apple.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		328CF823281D2FF9005D60D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"The Big Apple WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 85M7FD6YM2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The Big Apple WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "The Big Apple WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "is.carlvoller.The-Big-Apple.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		328CF826281D2FF9005D60D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85M7FD6YM2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = The_Big_Apple_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Big Apple WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "is.carlvoller.The-Big-Apple";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "is.carlvoller.The-Big-Apple.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		328CF827281D2FF9005D60D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85M7FD6YM2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = The_Big_Apple_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Big Apple WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "is.carlvoller.The-Big-Apple";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "is.carlvoller.The-Big-Apple.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		328CF82A281D2FF9005D60D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"The Big Apple/Preview Content\"";
+				DEVELOPMENT_TEAM = 85M7FD6YM2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "is.carlvoller.The-Big-Apple";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "The Big Apple/The Big Apple-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		328CF82B281D2FF9005D60D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"The Big Apple/Preview Content\"";
+				DEVELOPMENT_TEAM = 85M7FD6YM2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "is.carlvoller.The-Big-Apple";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "The Big Apple/The Big Apple-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		328CF7F0281D2FF6005D60D4 /* Build configuration list for PBXProject "The Big Apple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				328CF81F281D2FF9005D60D4 /* Debug */,
+				328CF820281D2FF9005D60D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		328CF821281D2FF9005D60D4 /* Build configuration list for PBXNativeTarget "The Big Apple WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				328CF822281D2FF9005D60D4 /* Debug */,
+				328CF823281D2FF9005D60D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		328CF825281D2FF9005D60D4 /* Build configuration list for PBXNativeTarget "The Big Apple WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				328CF826281D2FF9005D60D4 /* Debug */,
+				328CF827281D2FF9005D60D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		328CF829281D2FF9005D60D4 /* Build configuration list for PBXNativeTarget "The Big Apple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				328CF82A281D2FF9005D60D4 /* Debug */,
+				328CF82B281D2FF9005D60D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 328CF7ED281D2FF6005D60D4 /* Project object */;
+}

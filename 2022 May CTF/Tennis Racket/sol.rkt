@@ -1,0 +1,1 @@
+(read-line (open-input-file "/flag"))

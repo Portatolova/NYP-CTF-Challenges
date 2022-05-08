@@ -1,0 +1,1 @@
+docker run -d -p 8010:8010 --read-only --restart=always tennisracket

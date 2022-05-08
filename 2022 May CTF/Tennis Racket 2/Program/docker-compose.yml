@@ -1,0 +1,22 @@
+#
+#  Deploy Tennis Racket 2
+#  $ docker-compose up -d
+#
+
+version: '3.7'
+services: 
+  tennisracket2:
+    container_name: tennisracket2
+    image: tennisracket2
+    read_only: true
+    ports:
+    - "8011:8011"
+    depends_on: 
+      - "tennisracket2-grade-bot"
+    restart: always
+
+  tennisracket2-grade-bot:
+    container_name: tennisracket2-grade-bot
+    image: tennisracket2-grade-bot
+    restart: always
+    read_only: true

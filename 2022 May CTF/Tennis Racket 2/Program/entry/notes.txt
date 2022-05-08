@@ -1,0 +1,5 @@
+TODO List:
+1. Grade Racket Assignments
+2. Test out new website at http://tennisracket2-grade-bot:5000
+3. Chase students for tuition fee
+4. Mend my broken relationship with my daughter
